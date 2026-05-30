@@ -1,0 +1,12 @@
+{
+  "name": "argus",
+  "version": "1.0.0",
+  "description": "Argus — the all-seeing, multi-agent, VISION-VERIFIED auditor for Claude Code. Fans out one agent per surface, tests every single control for real (screenshot before/after and look), adversarially verifies each finding, and returns ranked fixes. Works on Android apps, websites, CLIs, APIs, and MCP servers. Ships two skills: /customer-audit (the auditor) and /overnight (the autonomous loop).",
+  "author": {
+    "name": "Evil-Bane",
+    "url": "https://github.com/Evil-Bane"
+  },
+  "homepage": "https://github.com/Evil-Bane/argus",
+  "license": "MIT",
+  "keywords": ["audit", "qa", "ui-review", "accessibility", "playwright", "multi-agent", "vision", "claude-code", "skill", "argus"]
+}

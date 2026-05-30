@@ -1,0 +1,14 @@
+{
+  "name": "argus",
+  "owner": {
+    "name": "Evil-Bane",
+    "url": "https://github.com/Evil-Bane"
+  },
+  "plugins": [
+    {
+      "name": "argus",
+      "source": "./",
+      "description": "Argus — the all-seeing, multi-agent, vision-verified auditor for Claude Code. Tests every control for real (screenshot + look), adversarially verifies, ranks fixes. Ships /customer-audit and /overnight. Works on apps, websites, CLIs, APIs, and MCP servers."
+    }
+  ]
+}
