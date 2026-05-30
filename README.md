@@ -19,8 +19,10 @@
 > finding, and hand you a ranked, location-referenced fix list. Then `/overnight` keeps watch:
 > audit → fix → verify → commit, while you sleep.
 
-<!-- Add a demo GIF here: one /customer-audit run fanning out across surfaces + the ranked report. -->
-<p align="center"><em>▶ demo coming soon</em></p>
+<p align="center">
+  <img src="demo/argus-demo.gif" width="760"
+       alt="Argus running /customer-audit — fan out across surfaces, adversarially verify, emit a ranked fix list">
+</p>
 
 ## Why this exists
 
@@ -90,6 +92,21 @@ durable journal so nothing is ever lost, and self-schedules its wake-ups.
 Two skills ship in this plugin:
 - **`/customer-audit`** — the auditor.
 - **`/overnight`** — the autonomous loop that runs the auditor and fixes what it finds.
+
+## Validate it yourself
+
+No hand-waving — reproduce the claims in a couple of minutes:
+
+1. Install (above), then open Claude Code in any project (a small web app or repo works best).
+2. Run `/customer-audit ui`.
+3. Watch it fan out one agent per surface, exercise + screenshot each control, run an adversarial
+   verify pass, then print a ranked P0–P3 list with `file:line` references.
+
+For the autonomous loop, try `/overnight  fix the top 3 issues you find, build, and commit each` —
+it keeps a durable journal and self-schedules wake-ups, so a crash or pause never loses progress.
+
+What to check: every finding cites a concrete location; refuted findings are dropped before they
+reach you; UI findings are routed through any design skills you already have installed.
 
 ## Contributing
 
